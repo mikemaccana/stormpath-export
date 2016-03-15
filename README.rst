@@ -66,7 +66,7 @@ install the latest release of ``stormpath-export``:
 
 .. code-block:: console
 
-    $ pip install -U stormpath-export
+    $ pip install --user --upgrade stormpath-export
 
 That's it :)
 
@@ -80,7 +80,7 @@ simply run:
 
 .. code-block:: console
 
-    $ stormpath-export configure
+    $ ~/Library/Python/2.7/bin/stormpath-export configure
 
 This will prompt you for some basic information, then store your credentials
 in the local file ``~/.stormy``.
@@ -89,7 +89,7 @@ Next, to initiate a backup job, you can run:
 
 .. code-block:: console
 
-    $ stormpath-export
+    $ ~/Library/Python/2.7/bin/stormpath-export
 
 This will export all your Stormpath data, and dump it into a new directory
 named ``stormpath-exports``. If you'd like to specify your own backup location,
@@ -97,7 +97,7 @@ you can do so by adding a path -- for instance:
 
 .. code-block:: console
 
-    $ stormpath-export ~/Desktop/stormpath-exports
+    $ ~/Library/Python/2.7/bin/stormpath-export ~/Desktop/stormpath-exports
 
 When exporting your data, you should see output similar to the following:
 
@@ -131,7 +131,7 @@ For full usage information, run ``stormpath-export -h``:
 
 .. code-block:: console
 
-    $ stormpath-export -h
+    $ ~/Library/Python/2.7/bin/stormpath-export -h
     stormpath-export
     ----------------
 
